@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Asymmetric.Helper;
 using Asymmetric.Models;
 using Asymmetric.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -34,6 +35,7 @@ namespace Asymmetric
             services.Configure<JwtSettings>(Configuration.GetSection("jwt"));
             services.AddSingleton<IJwtHandler, JwtHandler>();
             services.AddMvc();
+            services.AddSwaggerDocumentation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +48,7 @@ namespace Asymmetric
                 AutomaticAuthenticate = true,
                 TokenValidationParameters = jwtHandler.Parameters
             });
+            app.UseSwaggerDocumentation();
             app.UseMvc();
         }
     }

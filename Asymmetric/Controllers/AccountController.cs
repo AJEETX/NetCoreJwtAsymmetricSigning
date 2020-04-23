@@ -26,21 +26,20 @@ namespace Asymmetric.Controllers
         {
             return Ok("Success");
         }
-        [HttpGet("me")]
+        [HttpPost("login")]
+        public IActionResult SignIn([FromBody]SignIn request)
+        {
+            if (string.IsNullOrWhiteSpace(request.Username ) && request.Username!="ajeet" && request.Password != "secret")
+            {
+                return Unauthorized();
+            }
+            return Ok(_jwtHandler.Create(request.Username));
+        }
+        [HttpGet("welcome")]
         [Authorize]
         public IActionResult Get()
         {
             return Content($"Hello {User.Identity.Name}");
-        }
-
-        [HttpPost("sign-in")]
-        public IActionResult SignIn([FromBody]SignIn request)
-        {
-            if (string.IsNullOrWhiteSpace(request.Username) || request.Password != "secret")
-            {
-                return Unauthorized();
-            }
-            return  Ok(_jwtHandler.Create(request.Username));
         }
     }
 }
