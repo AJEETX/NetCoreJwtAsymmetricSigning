@@ -1,8 +1,6 @@
-# AspNetCore JwtAsymmetricSigning
-Net Core Jwt Asymmetric Signing with public private key
 #  NetCore Jwt Asymmetric Signing  ![GitHub release](https://img.shields.io/github/release/ajeetx/NetCoreJwtAsymmetricSigning.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2020.svg?style=for-the-badge)
 
-### AspDotnet Core Swagger Jwt Authentication and Authorisation (Asymmetric Signing)
+####  Net Core Jwt Asymmetric Signing with public private key
 
 [![.Net Framework](https://img.shields.io/badge/DotNet-2.2_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/)  | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/NetCoreJwtAsymmetricSigning.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/NetCoreJwtAsymmetricSigning.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/NetCoreJwtAsymmetricSigning.svg) 
 | --- | ---          | ---        | ---      | 
