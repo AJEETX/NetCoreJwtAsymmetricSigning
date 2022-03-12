@@ -1,4 +1,4 @@
-#  NetCore Jwt Asymmetric Signing  ![GitHub release](https://img.shields.io/github/release/ajeetx/NetCoreJwtAsymmetricSigning.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2020.svg?style=for-the-badge)
+#  NetCore Jwt Asymmetric Signing  ![GitHub release](https://img.shields.io/github/release/ajeetx/NetCoreJwtAsymmetricSigning.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2022.svg?style=for-the-badge)
 
 ####  Net Core Jwt Asymmetric Signing with public private key
 
